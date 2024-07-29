@@ -1,0 +1,664 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.omar_main {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+    margin-left: 4.64rem;
+    margin-top: 3rem;
+}
+
+.omar_main button {
+    cursor: pointer;
+}
+
+
+/* --------- Learn More --------- */
+.omar_top {
+    width: 100%;
+    height: auto;
+}
+
+.omar_tLaptop {
+    width: 44.49675rem;
+    height: 22.11319rem;
+    flex-shrink: 0;
+    position: absolute;
+    top: 12.14rem;
+    right: 12.55rem;
+}
+
+.omar_tmobile {
+    width: 14.97625rem;
+    height: 29.25rem;
+    flex-shrink: 0;
+    position: absolute;
+    top: 6rem;
+    right: 5.95rem;
+}
+
+.omar_tblue {
+    width: 77.40625rem;
+    height: 38.54038rem;
+    flex-shrink: 0;
+    position: absolute;
+    right: 0;
+    top: 12.07rem;
+    z-index: -1;
+}
+
+.omar_top h1 {
+    color: var(--Black, #1C1C1C);
+    font-family: Poppins;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    width: 38.8125rem;
+}
+
+.omar_top p {
+    color: var(--text, #909090);
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    width: 38.8125rem;
+}
+
+.omar_top ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    color: #909090;
+    list-style-image: url('assets/circle-check-solid.png');
+    margin-left: 40px;
+
+}
+
+.omar_tleft {
+    display: flex;
+    width: 41.625rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-right: 37.8rem;
+}
+
+.tleft_one {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.tleft_two {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+/* --------- Pricing --------- */
+.omar_mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.omar_mtop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.omar_mtop h1 {
+    color: var(--Black, #1C1C1C);
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    font-family: Poppins;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.omar_mtop p {
+    color: var(--text, #909090);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.omar_mbot {
+    width: 100%;
+}
+
+.omar_plans {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.omar_basic {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.5rem;
+    background: #FFF;
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.25);
+}
+
+.omar_basic button:hover{
+    background: #FFF;
+    color: var(--Primary, #396AFF);
+}
+
+.obasic_in {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.omar_bh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.omar_bh p {
+    color: var(--Primary, #396AFF);
+    font-family: Poppins;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.omar_bh svg {
+    stroke-width: 1px;
+    stroke: var(--text, #909090);
+    width: 21.375rem;
+}
+
+.omar_bb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.omar_bb1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.omar_bb1 p {
+    color: var(--text, #909090);
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.omar_bb1 h3 {
+    color: var(--Primary, #396AFF);
+    font-family: Poppins;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.omar_bb1 button {
+    display: flex;
+    padding: 1.375rem 6.3125rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.5rem;
+    background: var(--Primary, #396AFF);
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.omar_bb2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    list-style-image: url('assets/ic_round-check.png')
+}
+
+.omar_bb2 li {
+    color: var(--text, #909090);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-left: 15px;
+}
+
+.omar_premium {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.5rem;
+    background: var(--Primary, #396AFF);
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.25);
+}
+
+.opremium_in {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.omar_ph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.omar_ph p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.omar_ph svg {
+    stroke-width: 1px;
+    stroke: var(--text, #909090);
+    width: 21.375rem;
+}
+
+.omar_pb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.omar_pb1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.omar_pb1 p {
+    color: rgba(255, 255, 255, 0.65);
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.omar_pb1 h3 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.omar_pb1 button {
+    display: flex;
+    padding: 1.375rem 6.3125rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.5rem;
+    background: #FFF;
+    color: var(--Primary, #396AFF);
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.omar_premium button:hover{
+    background: var(--Primary, #396AFF);
+    color: #FFF;
+}
+
+.omar_pb2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    list-style-image: url('assets/ic_round-check(1).png')
+}
+
+.omar_pb2 li {
+    color: rgba(255, 255, 255, 0.65);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-left: 15px;
+}
+
+.omar_standard {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.5rem;
+    background: #FFF;
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.25);
+}
+
+.omar_standard button:hover{
+    background: #FFF;
+    color: var(--Primary, #396AFF);
+}
+
+.ostandard_in {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.omar_sh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.omar_sh p {
+    color: var(--Primary, #396AFF);
+    font-family: Poppins;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.omar_sh svg {
+    stroke-width: 1px;
+    stroke: var(--text, #909090);
+    width: 21.375rem;
+}
+
+.omar_sb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.omar_sb1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.omar_sb1 p {
+    color: var(--text, #909090);
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.omar_sb1 h3 {
+    color: var(--Primary, #396AFF);
+    font-family: Poppins;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.omar_sb1 button {
+    display: flex;
+    padding: 1.375rem 6.3125rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.5rem;
+    background: var(--Primary, #396AFF);
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.omar_sb2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    list-style-image: url('assets/ic_round-check.png')
+}
+
+.omar_sb2 li {
+    color: var(--text, #909090);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-left: 15px;
+}
+
+/* --------- Demo --------- */
+
+.omar_bot {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6.25rem;
+    margin-top: 4.44rem;
+}
+
+.omar_demo {
+    width: 90%;
+    height: 20.3125rem;
+    flex-shrink: 0;
+    border-radius: 1.5rem;
+    background: #1C1C1C;
+    display: flex;
+    justify-content: space-around;
+}
+
+.omar_db {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: 4.19rem;
+    margin-left: 1.5rem;
+}
+
+.omar_dtext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: auto;
+    gap: 1rem;
+}
+
+.omar_dtext button {
+    padding: 0.56rem;
+    width: 10rem;
+    height: 3.125rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--Primary, #396AFF);
+    background-color: #1C1C1C;
+    color: #396AFF;
+}
+
+.omar_demo button:hover{
+    background-color: #396AFF;
+    color: #1C1C1C;
+}
+
+.omar_dtext h3 {
+    color: var(--Primary, #396AFF);
+    font-family: Poppins;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.omar_dtext p {
+    /* width: 39.6875rem; */
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.omar_phone {
+    width: 35.375rem;
+    height: 31.5625rem;
+    flex-shrink: 0;
+    position: relative;
+    top: -4.4rem;
+}
+
+/* --------- Responsive --------- */
+
+@media (max-width: 800px) {
+    .omar_main {
+        margin-left: 0;
+    }
+
+    .omar_top {
+        display: flex;
+        flex-direction: column;
+        margin-left: 4rem;
+    }
+
+    .omar_tLaptop {
+        width: 22.49675rem;
+        height: 11.11319rem;
+        flex-shrink: 0;
+        position: absolute;
+        top: 23.14rem;
+        right: 9.55rem;
+    }
+
+    .omar_tmobile {
+        width: 7.97625rem;
+        height: 14.25rem;
+        flex-shrink: 0;
+        position: absolute;
+        top: 20rem;
+        right: 5.95rem;
+    }
+
+    .omar_mtop {
+        margin-left: 0;
+    }
+
+    .omar_plans {
+        flex-direction: column;
+    }
+
+    .omar_db {
+        margin-top: 1rem;
+        margin-left: 3rem;
+    }
+
+    .omar_phone {
+        width: 18.375rem;
+        height: 16.5625rem;
+        top: 3rem;
+    }
+
+    .omar_dtext{
+        margin-top: 2rem;
+    }
+
+    .omar_tblue {
+        width: 38.40625rem;
+        height: 19.54038rem;
+        flex-shrink: 0;
+        position: absolute;
+        right: 0;
+        top: 19.07rem;
+        z-index: -1;
+    }
+}

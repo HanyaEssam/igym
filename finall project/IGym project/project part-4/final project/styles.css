@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 0 60px; /* Add padding to create margin for arrows */
+    max-width: 1200px; /* Ensure the container width fits exactly 3 cards */
+}
+.top{
+    font-weight: bold; /* Makes the text bold */
+    text-shadow: 2px 2px 2px #000000; /* Adds shadow to the text */
+    color: #00008B; /* Sets the text color to dark blue (navy) */
+     text-align: left; /*Aligns the text to the left  */
+    
+      
+}
+.card-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 960px; /* Ensure the container width allows only 3 cards at a time */
+}
+
+.card {
+    flex: 0 0 calc(33.333% - 20px); /* Each card takes up exactly one-third of the container width with margin */
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+    min-width: 300px; /* Minimum width of each card */
+}
+
+.card:hover {
+    background-color: #0c2ce0;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    color: #fff; /* Change text color to white on hover */
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 10px;
+    z-index: 100;
+}
+
+.left {
+    left: 10px; /* Position left arrow inside the card container */
+}
+
+.right {
+    right: 10px; /* Position right arrow inside the card container */
+}
+
+.contact-us {
+    background-color: #f1f1f1; /* Updated background color */
+    color: #333; /* Text color */
+    padding: 40px 0;
+}
+
+.contact-us .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    max-width: 1200px; /* Limit the maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+}
+
+.contact-form, .about-information {
+    flex: 1 1 45%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for the sections */
+    min-height: 400px; /* Ensure both sections have the same height */
+    position: relative; /* For positioning the horizontal line */
+}
+
+.contact-form {
+    background-color: #fff; /* Background color for contact form */
+    color: #333; /* Text color for contact form */
+}
+
+.about-information {
+    background-color: #007bff; /* Background color for about information */
+    color: #fff; /* Text color for about information */
+}
+
+.contact-form h2, .about-information h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Add border to inputs and textarea */
+    border-radius: 5px;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #999; /* Placeholder color */
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Update button background color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.about-information p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.about-information p img {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.about-information hr {
+    border: 0;
+    border-top: 1px solid #fff; /* White color for horizontal line */
+    margin: 20px 0; /* Space around the horizontal line */
+    position: absolute;
+    bottom: 70px; /* Position above the social icons */
+    left: 0;
+    right: 0;
+    width: calc(100% - 40px); /* Account for section padding */
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 20px; /* Position at the bottom */
+    left: 0;
+    right: 0;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    background-color: #1a237e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-content div {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content ul li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        flex: 0 0 calc(50% - 20px); /* Two cards per row on medium screens */
+    }
+
+    .card-container {
+        max-width: 100%; /* Allow the container to use full width on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form, .about-information {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-content div {
+        width: 100%;
+    }
+
+    .card-container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 0 0 100%; /* Each card takes full width on smaller screens */
+        min-width: auto; /* Remove minimum width on smaller screens */
+    }
+}
